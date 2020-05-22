@@ -6,7 +6,7 @@ The following is demonstrated:
 1. Authentication
 1. Create new project
 2. Create new video in this project
-3. Upload `small.mp4` this video and wait for ingestion to complete
+3. Upload `small.mp4` as media for video and wait for ingestion to complete
 4. Process video and wait for processing to complete
 5. Download resultant media
 6. Delete videos and project

@@ -36,3 +36,7 @@ Run the API demo:
 ```
     ./pixop_api_demo.sh
 ```
+
+## REST endpoint documentation
+
+https://static.pixop.com/documentation/Pixop_Video_Processing_REST_API_staging.html

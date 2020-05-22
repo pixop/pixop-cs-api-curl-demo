@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 API_SITE=https://staging-api.pixop.com
 

@@ -19,8 +19,10 @@ JWT_TOKEN=$(echo $AUTH_RESPONSE | jq -r '.jwtToken')
 
 echo "Parsed JWT token: $JWT_TOKEN"
 
+# Prepare cURL headers
 CURL_AUTH_HEADER="-H \"Authorization: Bearer $JWT_TOKEN\""
 CURL_ALL_HEADERS="$CURL_COMMON_HEADERS $CURL_AUTH_HEADER"
+
 
 ### Step 2: Create new project
 PROJECT_RESPONSE=$(eval "curl -s -X PUT $CURL_ALL_HEADERS -d '{\"name\": \"Demo project\"}' $VIDEOS_PATH/project")

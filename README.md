@@ -12,7 +12,7 @@ The following is demonstrated:
 6. Delete videos and project
 
 ## Requirements
-- a valid Pixop account (https://www.pixop.com)
+- a valid staging Pixop account (contact info@pixop.com)
 - Bash shell
 - `curl` (https://curl.haxx.se/)
 - `jq` (https://stedolan.github.io/jq/)

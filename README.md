@@ -17,7 +17,7 @@ The following is demonstrated:
 - `curl` (https://curl.haxx.se/)
 - `jq` (https://stedolan.github.io/jq/)
 
-## Initial set up
+## Initial setup
 
 Clone repository and create personal cURL credentials file for Pixop Video Processing API:
 

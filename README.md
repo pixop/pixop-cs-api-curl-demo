@@ -6,7 +6,7 @@ The following is demonstrated:
 1. Authentication
 1. Create new project
 2. Create new video in the created project
-3. Upload `small.mp4` as media for the created video and wait for ingestion to complete
+3. Upload `small.mp4` (560x320 pixels) as media for the created video and wait for ingestion to complete
 4. Process video and wait for processing to complete
 5. Download resultant HD 1080p media to `small_hd.mp4`
 6. Delete videos and project

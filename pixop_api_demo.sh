@@ -79,7 +79,7 @@ echo "Parsed upload light ingested endpoint: $UPLOAD_ENDPOINT"
 echo
 echo "Step #4: Uploading media file into video entity..."
 
-UPLOAD_RESPONSE=$(eval "curl -s -F file=@small.mp4 $CURL_AUTH_HEADER $UPLOAD_ENDPOINT")
+UPLOAD_RESPONSE=$(eval "curl -s -F file=@small.mov $CURL_AUTH_HEADER $UPLOAD_ENDPOINT")
 
 echo
 echo "Upload media response..."
@@ -150,7 +150,7 @@ done
 echo
 echo "Step #8: Downloading processed media..."
 
-DOWNLOAD_RESPONSE=$(eval "curl -s $CURL_AUTH_HEADER $DOWNLOAD_ENDPOINT -o small_hd.mp4")
+DOWNLOAD_RESPONSE=$(eval "curl -s $CURL_AUTH_HEADER $DOWNLOAD_ENDPOINT -o small_hd.mov")
 
 echo
 echo "Download media response (no output if no errors occurred)..."
@@ -181,8 +181,8 @@ echo $DELETE_PROJECT_RESPONSE | jq
 
 ###
 echo
-echo "Original file 'small.mp4' (560x320 pixels):       $(wc -c < small.mp4) bytes"
-echo "Processed file 'small_hd.mp4' (1890x1080 pixels): $(wc -c < small_hd.mp4) bytes"
+echo "Original file 'small.mov' (560x320 pixels):       $(wc -c < small.mov) bytes"
+echo "Processed file 'small_hd.mov' (1890x1080 pixels): $(wc -c < small_hd.mov) bytes"
 
 ### All done!
 echo

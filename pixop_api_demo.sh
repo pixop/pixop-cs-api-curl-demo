@@ -179,7 +179,7 @@ echo "Delete project response (no output if no errors occurred)..."
 echo $DELETE_PROJECT_RESPONSE | jq
 
 
-###
+### Print original and processed file size
 echo
 echo "Original file 'small.mov' (560x320 pixels):       $(wc -c < small.mov) bytes"
 echo "Processed file 'small_hd.mov' (1890x1080 pixels): $(wc -c < small_hd.mov) bytes"

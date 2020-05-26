@@ -95,7 +95,7 @@ echo "Parsed process video endpoint: $PROCESS_VIDEO_ENDPOINT"
 
 ### Step 5: Wait for light ingestion to complete
 echo
-echo "Step #5: Waiting for ingestion to complete (this might take up to 15 seconds)..."
+echo "Step #5: Waiting for ingestion to complete (this can take up to 15 seconds)..."
 echo
 
 sleep 5
@@ -153,7 +153,7 @@ echo "Step #8: Downloading processed media..."
 DOWNLOAD_RESPONSE=$(eval "curl -s $CURL_AUTH_HEADER $DOWNLOAD_ENDPOINT -o small_hd.mov")
 
 echo
-echo "Download media response (no output if no errors occurred)..."
+echo "Download media response (no output if successful)..."
 echo $DOWNLOAD_RESPONSE | jq
 
 
@@ -175,7 +175,7 @@ echo "Step #10: Deleting project..."
 DELETE_VIDEO_RESPONSE=$(eval "curl -s -X DELETE $CURL_ALL_HEADERS $VIDEOS_PATH/project/$PROJECT_ID")
 
 echo
-echo "Delete project response (no output if no errors occurred)..."
+echo "Delete project response (no output if successful)..."
 echo $DELETE_PROJECT_RESPONSE | jq
 
 

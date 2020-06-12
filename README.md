@@ -27,7 +27,7 @@ Clone repository and create personal cURL credentials file for Pixop Video Proce
     cp pixop-api-netrc-template pixop-api-netrc
 ```
 
-Then update the email and password in the `pixop-api-netrc`.
+Finally update the email and password in the `pixop-api-netrc` to the appropriate values before running the demo.
 
 ## Running
 

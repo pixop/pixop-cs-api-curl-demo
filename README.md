@@ -39,4 +39,4 @@ Run the API demo:
 
 ## REST endpoints documentation
 
-https://static.pixop.com/documentation/Pixop_Video_Processing_REST_API_staging.html
+https://www.pixop.com/pixop-api/docs
